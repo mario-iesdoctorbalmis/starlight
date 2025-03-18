@@ -6,6 +6,7 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
+			favicon: '/images/favicon.png',
 			logo: {
 				src: './src/assets/balmis.jpeg',
 			},

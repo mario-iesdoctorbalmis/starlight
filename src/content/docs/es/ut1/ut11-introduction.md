@@ -1,5 +1,7 @@
 ---
 title: UT11 Intro ES
+tableOfContents:
+  maxHeadingLevel: 3
 ---
 
 ## Ficheros
