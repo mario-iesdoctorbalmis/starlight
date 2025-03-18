@@ -3,10 +3,36 @@ title: UT11 Intro ES
 tableOfContents:
   maxHeadingLevel: 3
 ---
+
+import { FileTree } from '@astrojs/starlight/components';
+
 ## Modo de trabajo
 - Fichero de configuración con menú lateral: `astro.config.mjs`
-- Estructura de documentos .md
+- Estructura de documentos .md /.mdx:
 
+<FileTree>
+- astro.config.mjs
+- src
+  - assets
+    - ut1
+      - imagen_de_la_ut1.jpg 
+    - balmis.jpeg // logo de la web
+  - content
+    - docs
+      - en
+        - ut11-other.md
+      - es
+        - ut1
+          - ut11-introduction.mdx // extensión .**mdx** para usar los componentes como el [filetree](https://starlight.astro.build/components/file-tree/)
+          - ut11-other.md
+        - ut2
+          - ut2-introduction.md
+</FileTree>
+
+- Para generar nuestra documentación podemos cambiar:
+  - `astro.config.mjs` para añadir entradas al menú
+  - `assets/utX` (donde X es la unidad) para estructurar las imágenes y 
+  - Archivos en las carpetas `content/docs/es/utX` (en/utX para inglés _-opcional-_ y va/utX para valenciano _-opcional-_) 
   
 ## Ficheros
 
