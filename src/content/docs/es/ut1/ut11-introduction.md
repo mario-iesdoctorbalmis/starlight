@@ -6,6 +6,7 @@ tableOfContents:
 ## Modo de trabajo
 - Fichero de configuración con menú lateral: `astro.config.mjs`
 - Estructura de documentos .md
+
   
 ## Ficheros
 
@@ -54,4 +55,3 @@ direction: right
 
 Astro.Markdown -> D2 -> SVG -> Browser.Diagrams -> Astro.Markdown: {style.animated: true}
 ```
-holavmundo
