@@ -42,13 +42,13 @@ https://github.com/terrastruct/d2/blob/master/docs/INSTALL.md
 [Astro D2](https://astro-d2.vercel.app/examples/hello-world/)
 ### Ejemplo
 #### código
-```dedos sketch pad=10 width=500 layout=elk
-//código de d2
-direction: right
 
+````text
+```d2 sketch pad=10 width=500 layout=elk
+direction: right
 Astro.Markdown -> D2 -> SVG -> Browser.Diagrams -> Astro.Markdown: {style.animated: true}
 ```
-
+````
 #### resultado
 ```d2 sketch pad=10 width=500 layout=elk
 direction: right
