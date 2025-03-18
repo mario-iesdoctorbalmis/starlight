@@ -26,3 +26,20 @@ items: [
 ## Cambios de imágenes u otros objetos que se quedan en caché
 
 A veces no le sienta bien estos cambios y da error. Tan fácil como cerrar el proceso del servidor en consola mediante `ctrl+c` y volver a lanzar `npm run dev` en tu terminal
+
+## D2 Diagrams
+Debes instalar en tu PC **D2**
+https://github.com/terrastruct/d2/blob/master/docs/INSTALL.md
+
+```cmd
+**Powershell en modo administrador**
+\\ Instalador choco
+choco install d2
+```
+
+### uso
+```d2 sketch pad=50
+direction: right
+
+Astro.Markdown -> D2 -> SVG -> Browser.Diagrams -> Astro.Markdown: {style.animated: true}
+```

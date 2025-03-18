@@ -2,9 +2,12 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
+import astroD2 from 'astro-d2'
+
 // https://astro.build/config
 export default defineConfig({
 	integrations: [
+		astroD2(),
 		starlight({
 			favicon: '/images/favicon.png',
 			logo: {
