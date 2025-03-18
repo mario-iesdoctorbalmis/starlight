@@ -3,7 +3,10 @@ title: UT11 Intro ES
 tableOfContents:
   maxHeadingLevel: 3
 ---
-
+## Modo de trabajo
+- Fichero de configuración con menú lateral: `astro.config.mjs`
+- Estructura de documentos .md
+  
 ## Ficheros
 
 :::danger[A tener en cuenta]
@@ -31,15 +34,24 @@ A veces no le sienta bien estos cambios y da error. Tan fácil como cerrar el pr
 Debes instalar en tu PC **D2**
 https://github.com/terrastruct/d2/blob/master/docs/INSTALL.md
 
-```cmd
-**Powershell en modo administrador**
-\\ Instalador choco
-choco install d2
-```
+- **Powershell en modo administrador**
+
 
 ### uso
-```d2 sketch pad=50
+[Astro D2](https://astro-d2.vercel.app/examples/hello-world/)
+### Ejemplo
+#### código
+```dedos sketch pad=10 width=500 layout=elk
+//código de d2
 direction: right
 
 Astro.Markdown -> D2 -> SVG -> Browser.Diagrams -> Astro.Markdown: {style.animated: true}
 ```
+
+#### resultado
+```d2 sketch pad=10 width=500 layout=elk
+direction: right
+
+Astro.Markdown -> D2 -> SVG -> Browser.Diagrams -> Astro.Markdown: {style.animated: true}
+```
+holavmundo
