@@ -15,7 +15,7 @@ import { FileTree } from '@astrojs/starlight/components';
 - src
   - assets
     - ut1
-      - imagen_de_la_ut1.jpg 
+      - una_imagen_de_la_ut1.jpg 
     - balmis.jpeg // logo de la web
   - content
     - docs
@@ -27,12 +27,13 @@ import { FileTree } from '@astrojs/starlight/components';
           - ut11-other.md
         - ut2
           - ut2-introduction.md
+          - ...
 </FileTree>
 
 - Para generar nuestra documentación podemos cambiar:
   - `astro.config.mjs` para añadir entradas al menú
   - `assets/utX` (donde X es la unidad) para estructurar las imágenes y 
-  - Archivos en las carpetas `content/docs/es/utX` (en/utX para inglés _-opcional-_ y va/utX para valenciano _-opcional-_) 
+  - Archivos en las carpetas `content/docs/es/utX` (en/utX para inglés _-opcional-_ y va/utX para valenciano _-opcional-_) para el contenido. 
   
 ## Ficheros
 
