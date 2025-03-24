@@ -1,10 +1,36 @@
 # Plantilla Balmis Starlight 
 ## Requisitos
 
-- npm
-- d2
+- Visual Studio Code
+- NodeJS (npm)
+- d2 (Diagramas)
 - git
 - Tener cuenta en github (la del centro es buena opción)
+
+
+**Instalar todos a la vez**
+  - copia y pega en Powershell
+  - PowerShell como admisnistrador
+```sh
+winget install -e --id Microsoft.VisualStudioCode # VS code
+winget install -e --id OpenJS.NodeJS # NPM
+winget install -e --id Terrastruct.D2 #D2
+winget install --id Git.Git -e --source winget #GIT
+```
+
+## 1.- 
+[Repositorio](https://github.com/mario-iesdoctorbalmis/starlight) con la plantilla de Starlight en github
+
+## GIT
+### Configuración básica
+
+desde git bash (acabamos de instalarlo) o desde consola de VS code
+
+```sh
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+```
+
 
 ## Descargar plantilla para empezar
 
@@ -17,6 +43,8 @@ Creamos un nuevo repositorio en https://github.com. Le damos nombre, descripció
 desde la terminal del equipo donde esta el proyecto que queremos subir a github
 Nos vamos a la carpeta del proyecto y ejecutamos estos comandos.
 
+```sh
 git remote add origin git@github.com:mario-iesdoctorbalmis/starlight.git
 git branch -M main
 git push -u origin main
+```
