@@ -9,8 +9,7 @@
 
 
 **Instalar todos a la vez**
-  - copia y pega en Powershell
-  - PowerShell como admisnistrador
+  - copia y pega en PowerShell (como admisnistrador)
 ```sh
 winget install -e --id Microsoft.VisualStudioCode # VS code
 winget install -e --id OpenJS.NodeJS # NPM
@@ -18,8 +17,21 @@ winget install -e --id Terrastruct.D2 #D2
 winget install --id Git.Git -e --source winget #GIT
 ```
 
-## 1.- 
-[Repositorio](https://github.com/mario-iesdoctorbalmis/starlight) con la plantilla de Starlight en github
+## 1.- VS Code
+
+ - Abrimos VS code y la carpeta de trabajo
+  ![abrir carpeta en vs code](src/assets/manual/vscode%20abrir%20carpeta.png)
+ - Abrimos el terminal
+  ![abrir terminal en vs code](src/assets/manual/vscode%20terminal.png)
+
+## 2.- Clonar repositorio
+
+Desde el terminal de visual studio
+
+```sh
+git clone https://github.com/mario-iesdoctorbalmis/starlight
+```
+  ![clonación de repo](src/assets/manual/Github%20clone.png)
 
 ## GIT
 ### Configuración básica
