@@ -33,6 +33,15 @@ git clone https://github.com/mario-iesdoctorbalmis/starlight
 ```
   ![clonación de repo](src/assets/manual/Github%20clone.png)
 
+## Instalar librerías
+1. Reiniciar VS code
+2. Acceder a la carpeta de trabajo (repositorio clonado)
+3. lanzar el comando:
+```sh
+npm install
+```
+
+
 ## GIT
 ### Configuración básica
 
