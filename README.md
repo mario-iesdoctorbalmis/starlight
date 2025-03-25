@@ -36,7 +36,7 @@ git clone https://github.com/mario-iesdoctorbalmis/starlight
 ## Instalar librerías
 1. Reiniciar VS code
 2. Acceder a la carpeta de trabajo (repositorio clonado)
-3. lanzar el comando:
+3. Lanzar el comando:
 ```sh
 npm install
 ```
