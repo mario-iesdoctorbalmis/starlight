@@ -4,6 +4,7 @@
 - Visual Studio Code
 - NodeJS (npm)
 - d2 (Diagramas)
+- Python
 - git
 - Tener cuenta en github (la del centro es buena opción)
 
@@ -14,6 +15,7 @@
 winget install -e --id Microsoft.VisualStudioCode # VS code
 winget install -e --id OpenJS.NodeJS # NPM
 winget install -e --id Terrastruct.D2 #D2
+winget install --id=Python.Python.3.12  -e # Python
 winget install --id Git.Git -e --source winget #GIT
 ```
 
@@ -40,7 +42,10 @@ git clone https://github.com/mario-iesdoctorbalmis/starlight
 ```sh
 npm install
 ```
-
+  - si da error, sigue el siguiente [manual](https://rogamainformatica.es/npm-ejecucion-scripts-deshabilitada-sistema/)
+  1.- Ejecuta Powershell como administrador
+  2.- Lanza el siguiente comando `Set-ExecutionPolicy Unrestricted`
+  3.- vuelve a VS Code e intenta de nuevo
 
 ## GIT
 ### Configuración básica
