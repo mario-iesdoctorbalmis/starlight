@@ -43,9 +43,9 @@ git clone https://github.com/mario-iesdoctorbalmis/starlight nombre_de_la_carpet
 npm install
 ```
   - Si da error, sigue el siguiente [manual](https://rogamainformatica.es/npm-ejecucion-scripts-deshabilitada-sistema/)
-  1.- Ejecuta Powershell como administrador
-  2.- Lanza el siguiente comando `Set-ExecutionPolicy Unrestricted`
-  3.- vuelve a VS Code e intenta de nuevo
+  1. Ejecuta Powershell como administrador
+  2. Lanza el siguiente comando `Set-ExecutionPolicy Unrestricted`
+  3. vuelve a VS Code e intenta de nuevo
 
 ## GITHUB
 1. Vamos a la página de [github](https://github.com)
