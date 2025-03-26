@@ -12,8 +12,8 @@
 **Instalar todos a la vez**
   - copia y pega en PowerShell (como admisnistrador)
 ```sh
-winget install -e --id Microsoft.VisualStudioCode # VS code
 winget install -e --id OpenJS.NodeJS # NPM
+winget install -e --id Microsoft.VisualStudioCode # VS code
 winget install -e --id Terrastruct.D2 #D2
 winget install --id=Python.Python.3.12  -e # Python
 winget install --id Git.Git -e --source winget #GIT
@@ -31,43 +31,38 @@ winget install --id Git.Git -e --source winget #GIT
 Desde el terminal de visual studio
 
 ```sh
-git clone https://github.com/mario-iesdoctorbalmis/starlight
+git clone https://github.com/mario-iesdoctorbalmis/starlight nombre_de_la_carpeta 
+# nombre_de_la_carpeta = el módulo o carpeta de trabajo ej. bbdd
 ```
   ![clonación de repo](src/assets/manual/Github%20clone.png)
 
 ## Instalar librerías
-1. Reiniciar VS code
-2. Acceder a la carpeta de trabajo (repositorio clonado)
-3. Lanzar el comando:
+1. Acceder a la carpeta de trabajo (nombre_de_la_carpeta)
+2. Lanzar el comando:
 ```sh
 npm install
 ```
-  - si da error, sigue el siguiente [manual](https://rogamainformatica.es/npm-ejecucion-scripts-deshabilitada-sistema/)
+  - Si da error, sigue el siguiente [manual](https://rogamainformatica.es/npm-ejecucion-scripts-deshabilitada-sistema/)
   1.- Ejecuta Powershell como administrador
   2.- Lanza el siguiente comando `Set-ExecutionPolicy Unrestricted`
   3.- vuelve a VS Code e intenta de nuevo
 
-## GIT
-### Configuración básica
+## GITHUB
+1. Vamos a la página de [github](https://github.com)
+2. Creamos repositorio nuevo
+3. 
+## GIT y GITHUB
 
-desde git bash (acabamos de instalarlo) o desde consola de VS code
+### Configuración básica de GIT
+
+
+
+Desde `consola de VS code` configuramos git
 
 ```sh
 $ git config --global user.name "John Doe"
 $ git config --global user.email johndoe@example.com
 ```
-
-
-## Descargar plantilla para empezar
-
-
-## Subir repositorio a github
-
-**desde la web de github**
-Creamos un nuevo repositorio en https://github.com. Le damos nombre, descripción, seleccionamos si va a ser un proyecto publico o privado si es el caso, y dejamos el check de crear README sin marcar. Le damos a crear repositorio y con esto ya tenemos el repositorio donde alojaremos nuestro proyecto.
-
-desde la terminal del equipo donde esta el proyecto que queremos subir a github
-Nos vamos a la carpeta del proyecto y ejecutamos estos comandos.
 
 ```sh
 git remote add origin git@github.com:mario-iesdoctorbalmis/starlight.git
