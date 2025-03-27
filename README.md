@@ -113,14 +113,14 @@ Parece que estás teniendo un problema con la clave SSH al intentar acceder a un
 
 ## Instalar librerías necesarias 
 
-## Path
+## NPM en Path
 
 - Verificar que en el PATH esté nodejs "C:\Program Files\nodejs\"
 
 ```bash
 echo $env:Path
 ```
- - Añadimos al path en caso de no estár presente la URL
+ - Añadimos al path en caso de no estár presente la ruta
 ```bash
 [System.Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Program Files\nodejs\", [System.EnvironmentVariableTarget]::Machine)
 ```
