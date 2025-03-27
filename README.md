@@ -100,7 +100,7 @@ $ git config --global user.email johndoe@example.com
 ### 
 
 ```sh
-git remote add origin git@github.com:mario-iesdoctorbalmis/bbdd.git
+git remote add origin git@github.com:mario-iesdoctorbalmis/miModulo.git
 git branch -M main
 git push -u origin main
 ```
@@ -108,7 +108,7 @@ git push -u origin main
 Si fallase el add:
 
 ```sh
-git remote set-url origin git@github.com:mario-iesdoctorbalmis/bbdd.git
+git remote set-url origin git@github.com:mario-iesdoctorbalmis/miModulo.git
 git branch -M main
 git push -u origin main
  ```
@@ -122,7 +122,7 @@ Parece que estás teniendo un problema con la clave SSH al intentar acceder a un
 1. **Verifica si tienes claves SSH existentes**:
    Asegúrate de tener un par de claves SSH. Puedes verificarlo ejecutando:
    ```powershell
-   ls ~/.ssh
+   ls $env:USERPROFILE\.ssh
    ```
    Si ves archivos como `id_rsa` y `id_rsa.pub`, ya tienes un par de claves SSH.
 
@@ -137,13 +137,13 @@ Parece que estás teniendo un problema con la clave SSH al intentar acceder a un
    Inicia el agente SSH y añade tu clave:
    ```powershell
    Start-Service ssh-agent
-   ssh-add ~/.ssh/id_rsa
+   ssh-add $env:USERPROFILE\.ssh\id_ed25519
    ```
 
 4. **Añade la clave SSH a tu cuenta de GitHub**:
    Copia tu clave SSH al portapapeles:
    ```powershell
-   Get-Content ~/.ssh/id_rsa.pub | Set-Clipboard
+   Get-Content $env:USERPROFILE\.ssh\id_ed25519.pub | Set-Clipboard
    ```
    Luego, ve a GitHub > Settings (Configuración) > SSH and GPG keys > New SSH key (Nueva clave SSH), y pega tu clave.
 
@@ -152,4 +152,5 @@ Parece que estás teniendo un problema con la clave SSH al intentar acceder a un
    ```powershell
    ssh -T git@github.com
    ```
-   Deberías ver un mensaje de éxito si todo está configurado correctamente.
+   Deberías ver un mensaje de éxito si todo está configurado correctamente:
+   `Hi mario-iesdoctorbalmis! You've successfully authenticated, but GitHub does not provide shell access.`
