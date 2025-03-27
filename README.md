@@ -167,4 +167,6 @@ npm install
   2. Lanza el siguiente comando `Set-ExecutionPolicy Unrestricted`
   3. vuelve a VS Code e intenta de nuevo
 
- - Otro posible error con npm es `⠹Assertion failed: new_time >= loop->time, file c:\ws\deps\uv\src\win\core.c, line 327`. Se corrige sincronizando el reloj dentro del menu del fecha y hora
+ - Otro posible error en VirtualBox con npm es `⠹Assertion failed: new_time >= loop->time, file c:\ws\deps\uv\src\win\core.c, line 327`. 
+   - No hace bien la sincronización de fecha y hora
+   - Ve a Sistema > Placa base y asegúrate de que la opción Habilitar reloj de hardware UTC esté marcada.
