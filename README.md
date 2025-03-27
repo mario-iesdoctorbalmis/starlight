@@ -120,7 +120,7 @@ Parece que estás teniendo un problema con la clave SSH al intentar acceder a un
 ```bash
 echo $env:Path
 ```
- - Añadimos al path en caso de no estár presente la ruta
+ - Añadimos al path en caso de no estár presente la ruta (PowerShell en modo administrador)
 ```bash
 [System.Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Program Files\nodejs\", [System.EnvironmentVariableTarget]::Machine)
 ```
@@ -166,4 +166,4 @@ npm install
   2. Lanza el siguiente comando `Set-ExecutionPolicy Unrestricted`
   3. vuelve a VS Code e intenta de nuevo
 
-
+ - Otro posible error con npm es `⠹Assertion failed: new_time >= loop->time, file c:\ws\deps\uv\src\win\core.c, line 327`. Se corrige sincronizando el reloj dentro del menu del fecha y hora
