@@ -123,6 +123,7 @@ echo $env:Path
  - Añadimos al path en caso de no estár presente la ruta (PowerShell en modo administrador)
 ```bash
 [System.Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Program Files\nodejs\", [System.EnvironmentVariableTarget]::Machine)
+# Reiniciar la máquina después
 ```
 
  - Lanzar el comando:
