@@ -36,50 +36,6 @@ git clone https://github.com/mario-iesdoctorbalmis/starlight miModulo
 ```
   ![clonación de repo](src/assets/manual/Github%20clone.png)
 
-## Instalar librerías necesarias 
- - Lanzar el comando:
-```sh
-npm install
-```
-
-> [!NOTE]
-> #### ¿Qué hace `npm install`?
-> 1. **Instala dependencias**:
->    - Cuando ejecutas `npm install` en el directorio > raíz de tu proyecto, Node Package Manager (npm) lee > el archivo `package.json` y descarga todas las > dependencias listadas en la sección `dependencies` > y `devDependencies`.
-> 
-> 2. **Crea la carpeta `node_modules`**:
->    - Las dependencias descargadas se almacenan en una > carpeta llamada `node_modules` dentro del > directorio de tu proyecto.
-> 
-> 3. **Genera o actualiza el archivo `package-lock.> json`**:
->    - Este archivo contiene una lista detallada de las > versiones exactas de cada paquete instalado, > asegurando que las mismas versiones se instalen en > cualquier entorno donde se ejecute `npm install`.
-> 
-> #### Ejemplo
-> 
-> Supongamos que tienes un archivo `package.json` con el > siguiente contenido:
-> 
-> ```json
-> {
->   "name": "mi-proyecto",
->   "version": "1.0.0",
->   "dependencies": {
->     "express": "^4.17.1"
->   },
->   "devDependencies": {
->     "nodemon": "^2.0.7"
->   }
-> }
-> ```
-> 
-> Al ejecutar `npm install`, npm descargará e instalará > `express` y `nodemon` en la carpeta `node_modules`.
-> 
-
-  - Si da error de PowerShell prueba con el siguiente [manual](https://rogamainformatica.es/npm-ejecucion-scripts-deshabilitada-sistema/)
-  1. Ejecuta Powershell como administrador
-  2. Lanza el siguiente comando `Set-ExecutionPolicy Unrestricted`
-  3. vuelve a VS Code e intenta de nuevo
-
-
-
 ## GIT y GITHUB
 
 Desde `consola de VS code` configuramos git
@@ -105,7 +61,7 @@ git branch -M main
 git push -u origin main
 ```
 
-Si fallase el add:
+Si fallase el add, usaremos set-url:
 
 ```sh
 git remote set-url origin git@github.com:mario-iesdoctorbalmis/miModulo.git
@@ -154,3 +110,58 @@ Parece que estás teniendo un problema con la clave SSH al intentar acceder a un
    ```
    Deberías ver un mensaje de éxito si todo está configurado correctamente:
    `Hi mario-iesdoctorbalmis! You've successfully authenticated, but GitHub does not provide shell access.`
+
+## Instalar librerías necesarias 
+ - Lanzar el comando:
+```sh
+npm install
+```
+
+> [!NOTE]
+> #### ¿Qué hace `npm install`?
+> 1. **Instala dependencias**:
+>    - Cuando ejecutas `npm install` en el directorio > raíz de tu proyecto, Node Package Manager (npm) lee > el archivo `package.json` y descarga todas las > dependencias listadas en la sección `dependencies` > y `devDependencies`.
+> 
+> 2. **Crea la carpeta `node_modules`**:
+>    - Las dependencias descargadas se almacenan en una > carpeta llamada `node_modules` dentro del > directorio de tu proyecto.
+> 
+> 3. **Genera o actualiza el archivo `package-lock.> json`**:
+>    - Este archivo contiene una lista detallada de las > versiones exactas de cada paquete instalado, > asegurando que las mismas versiones se instalen en > cualquier entorno donde se ejecute `npm install`.
+> 
+> #### Ejemplo
+> 
+> Supongamos que tienes un archivo `package.json` con el > siguiente contenido:
+> 
+> ```json
+> {
+>   "name": "mi-proyecto",
+>   "version": "1.0.0",
+>   "dependencies": {
+>     "express": "^4.17.1"
+>   },
+>   "devDependencies": {
+>     "nodemon": "^2.0.7"
+>   }
+> }
+> ```
+> 
+> Al ejecutar `npm install`, npm descargará e instalará > `express` y `nodemon` en la carpeta `node_modules`.
+> 
+
+  - Si da error de PowerShell prueba con el siguiente [manual](https://rogamainformatica.es/npm-ejecucion-scripts-deshabilitada-sistema/)
+  1. Ejecuta Powershell como administrador
+  2. Lanza el siguiente comando `Set-ExecutionPolicy Unrestricted`
+  3. vuelve a VS Code e intenta de nuevo
+
+
+## Path
+
+- Verificar que en el PATH esté nodejs "C:\Program Files\nodejs\"
+
+```bash
+echo $env:Path
+```
+ - Añadimos al path en caso de no estár presente la URL
+```bash
+[System.Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Program Files\nodejs\", [System.EnvironmentVariableTarget]::Machine)
+```
