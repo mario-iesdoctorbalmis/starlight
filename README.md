@@ -170,3 +170,14 @@ npm install
  - Otro posible error en VirtualBox con npm es `⠹Assertion failed: new_time >= loop->time, file c:\ws\deps\uv\src\win\core.c, line 327`. 
    - No hace bien la sincronización de fecha y hora
    - Ve a Sistema > Placa base y asegúrate de que la opción Habilitar reloj de hardware UTC esté marcada.
+
+## Ejecutar en modo localhost
+
+`npm run dev`
+![ejecución](src/assets/manual/ejecución_dev.png)
+
+En el navegador abrir la URL: **http://localhost:4321/es**
+
+![home](src/assets/manual/home.png)
+
+- En el **Tema 1** hay apuntes de cómo trabajar con **Astro Starlight**
