@@ -112,6 +112,19 @@ Parece que estás teniendo un problema con la clave SSH al intentar acceder a un
    `Hi mario-iesdoctorbalmis! You've successfully authenticated, but GitHub does not provide shell access.`
 
 ## Instalar librerías necesarias 
+
+## Path
+
+- Verificar que en el PATH esté nodejs "C:\Program Files\nodejs\"
+
+```bash
+echo $env:Path
+```
+ - Añadimos al path en caso de no estár presente la URL
+```bash
+[System.Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Program Files\nodejs\", [System.EnvironmentVariableTarget]::Machine)
+```
+
  - Lanzar el comando:
 ```sh
 npm install
@@ -154,14 +167,3 @@ npm install
   3. vuelve a VS Code e intenta de nuevo
 
 
-## Path
-
-- Verificar que en el PATH esté nodejs "C:\Program Files\nodejs\"
-
-```bash
-echo $env:Path
-```
- - Añadimos al path en caso de no estár presente la URL
-```bash
-[System.Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Program Files\nodejs\", [System.EnvironmentVariableTarget]::Machine)
-```
