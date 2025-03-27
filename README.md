@@ -73,7 +73,7 @@ npm install
 > Al ejecutar `npm install`, npm descargará e instalará > `express` y `nodemon` en la carpeta `node_modules`.
 > 
 
-  - Si da error, sigue el siguiente [manual](https://rogamainformatica.es/npm-ejecucion-scripts-deshabilitada-sistema/)
+  - Si da error de PowerShell prueba con el siguiente [manual](https://rogamainformatica.es/npm-ejecucion-scripts-deshabilitada-sistema/)
   1. Ejecuta Powershell como administrador
   2. Lanza el siguiente comando `Set-ExecutionPolicy Unrestricted`
   3. vuelve a VS Code e intenta de nuevo
@@ -117,7 +117,7 @@ git push -u origin main
 ![repo done](src/assets/manual/remote_error.png)
 Parece que estás teniendo un problema con la clave SSH al intentar acceder a un repositorio de GitHub. Aquí tienes algunos pasos para ayudarte a resolverlo:
 
-¡Entendido! Aquí tienes los pasos adaptados para PowerShell:
+**Powershell en modo administrador**
 
 1. **Verifica si tienes claves SSH existentes**:
    Asegúrate de tener un par de claves SSH. Puedes verificarlo ejecutando:
