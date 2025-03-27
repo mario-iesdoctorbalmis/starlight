@@ -45,35 +45,35 @@ npm install
 > [!NOTE]
 > #### ¿Qué hace `npm install`?
 
-1. **Instala dependencias**:
-   - Cuando ejecutas `npm install` en el directorio raíz de tu proyecto, Node Package Manager (npm) lee el archivo `package.json` y descarga todas las dependencias listadas en la sección `dependencies` y `devDependencies`.
+> 1. **Instala dependencias**:
+>    - Cuando ejecutas `npm install` en el directorio > raíz de tu proyecto, Node Package Manager (npm) lee > el archivo `package.json` y descarga todas las > dependencias listadas en la sección `dependencies` > y `devDependencies`.
+> 
+> 2. **Crea la carpeta `node_modules`**:
+>    - Las dependencias descargadas se almacenan en una > carpeta llamada `node_modules` dentro del > directorio de tu proyecto.
+> 
+> 3. **Genera o actualiza el archivo `package-lock.> json`**:
+>    - Este archivo contiene una lista detallada de las > versiones exactas de cada paquete instalado, > asegurando que las mismas versiones se instalen en > cualquier entorno donde se ejecute `npm install`.
+> 
+> #### Ejemplo
+> 
+> Supongamos que tienes un archivo `package.json` con el > siguiente contenido:
+> 
+> ```json
+> {
+>   "name": "mi-proyecto",
+>   "version": "1.0.0",
+>   "dependencies": {
+>     "express": "^4.17.1"
+>   },
+>   "devDependencies": {
+>     "nodemon": "^2.0.7"
+>   }
+> }
+> ```
+> 
+> Al ejecutar `npm install`, npm descargará e instalará > `express` y `nodemon` en la carpeta `node_modules`.
+> 
 
-2. **Crea la carpeta `node_modules`**:
-   - Las dependencias descargadas se almacenan en una carpeta llamada `node_modules` dentro del directorio de tu proyecto.
-
-3. **Genera o actualiza el archivo `package-lock.json`**:
-   - Este archivo contiene una lista detallada de las versiones exactas de cada paquete instalado, asegurando que las mismas versiones se instalen en cualquier entorno donde se ejecute `npm install`.
-
-#### Ejemplo
-
-Supongamos que tienes un archivo `package.json` con el siguiente contenido:
-
-```json
-{
-  "name": "mi-proyecto",
-  "version": "1.0.0",
-  "dependencies": {
-    "express": "^4.17.1"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.7"
-  }
-}
-```
-
-Al ejecutar `npm install`, npm descargará e instalará `express` y `nodemon` en la carpeta `node_modules`.
-
-:::
   - Si da error, sigue el siguiente [manual](https://rogamainformatica.es/npm-ejecucion-scripts-deshabilitada-sistema/)
   1. Ejecuta Powershell como administrador
   2. Lanza el siguiente comando `Set-ExecutionPolicy Unrestricted`
