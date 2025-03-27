@@ -44,7 +44,6 @@ npm install
 
 > [!NOTE]
 > #### ¿Qué hace `npm install`?
-
 > 1. **Instala dependencias**:
 >    - Cuando ejecutas `npm install` en el directorio > raíz de tu proyecto, Node Package Manager (npm) lee > el archivo `package.json` y descarga todas las > dependencias listadas en la sección `dependencies` > y `devDependencies`.
 > 
