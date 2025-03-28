@@ -55,8 +55,9 @@ $ git config --global user.email johndoe@example.com
 
 ### 
 
+Añadimos el repositorio en nube. Se usa el **http** ya que el ssh no deja hacer push desde la red de Consellería.
 ```sh
-git remote add origin git@github.com:mario-iesdoctorbalmis/miModulo.git
+git remote add origin https://github.com/mario-iesdoctorbalmis/miModulo.git
 git branch -M main
 git push -u origin main
 ```
@@ -64,7 +65,7 @@ git push -u origin main
 Si fallase el add, usaremos set-url:
 
 ```sh
-git remote set-url origin git@github.com:mario-iesdoctorbalmis/miModulo.git
+git remote set-url origin https://github.com/mario-iesdoctorbalmis/miModulo.git
 git branch -M main
 git push -u origin main
  ```
