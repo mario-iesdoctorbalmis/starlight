@@ -86,6 +86,17 @@ export default defineConfig({
 					'ut2/ut2-introduction',
 				],
 			},
+			// UT3
+			{
+				label: 'UT3 - Tema 3',
+				translations: {
+					'va': 'UT3 - Tercer tema',
+					'en': 'UT3 - Third topic',
+				},
+				// Collapsa el grupo de forma predeterminada.
+				collapsed: true,
+				autogenerate: { directory: 'ut3' },
+			},
 		],
 
 	}), markdoc()],
