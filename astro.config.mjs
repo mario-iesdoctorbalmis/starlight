@@ -29,7 +29,7 @@ export default defineConfig({
 			'va': { lang: 'va', label: 'Valencià' },
 		},
 		// Set Spanish as the default language for this site.
-		defaultLocale: 'es',
+		defaultLocale: 'root',
 		sidebar: [
 			// UT1
 			{
