@@ -53,9 +53,17 @@ $ git config --global user.email johndoe@example.com
       1. Resultado:
         ![repo done](src/assets/manual/repository%20created.png)
 
-### 
+- Cambiamos los datos del repositorio en el archivo `astro.config.mjs`
+```diff lang="js" title="astro.config.mjs"
+import { defineConfig } from 'astro/config'
 
-Añadimos el repositorio en nube. Se usa el **http** ya que el ssh no deja hacer push desde la red de Consellería.
+export default defineConfig({
++  site: 'https://aquí_va_tu_usuario.github.io', // cambia esto por tu nombre de usuario de GitHub
++  base: '/miModulo', // cambia esto por el nombre de tu repositorio
+})
+```
+
+- Añadimos el repositorio en nube. Se usa el **http** ya que el ssh no deja hacer push desde la red de Consellería.
 ```sh
 git remote add origin https://github.com/mario-iesdoctorbalmis/miModulo.git
 git branch -M main
