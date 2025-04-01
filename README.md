@@ -89,7 +89,9 @@ npm install
 
 ## Ejecutar en modo localhost
 
-`npm run dev`
+```sh
+npm run dev 
+```
 ![ejecución](src/assets/manual/ejecución_dev.png)
 
 En el navegador abrir la URL: **http://localhost:4321/es**
