@@ -30,16 +30,16 @@ export default defineConfig({
 		sidebar: [
 			// UT1
 			{
-				label: 'UT1 - Primer tema',
+				label: 'UT1 - Modo de trabajo de Astro Starlight',
 				translations: {
-					'va': 'UT1 - Tema primerenc',
-					'en': 'UT1 - First one',
+					'va': 'UT1 - Modo de treball d\'Astro Starlight',
+					'en': 'UT1 - Astro Starlight Work Mode',
 				},
 				// Collapsa el grupo de forma predeterminada.
 				collapsed: true,
 				items: [
 					{
-						label: '1.1 básicos',
+						label: '1.1 Básicos',
 						translations: {
 							'va': '1.1 Bàsics',
 							'en': '1.1 Basics',
@@ -50,9 +50,9 @@ export default defineConfig({
 						],
 					},
 					{
-						label: '1.2 Submenú',
+						label: '1.2 Submenú ejemplo',
 						translations: {
-							'es': '1.2 Submenú',
+							'va': '1.2 Submenú',
 							'en': '1.2 Submenu',
 						},
 						items: [
@@ -61,7 +61,7 @@ export default defineConfig({
 						],
 					},
 					{
-						label: '1.3 tercer subapartado',
+						label: '1.3 tercer subapartado ejemplo',
 						translations: {
 							'va': '1.3 tercer subapartat',
 							'en': '1.3 third subsection',
@@ -75,10 +75,10 @@ export default defineConfig({
 			},
 			//UT2
 			{
-				label: 'UT2 - Segundo tema',
+				label: 'UT2 - Subir a la nube',
 				translations: {
-					'va': 'UT2 - Segon tema',
-					'en': 'UT2 - Second topic',
+					'va': 'UT2 - Nube',
+					'en': 'UT2 - Cloud',
 				},
 				// Collapsa el grupo de forma predeterminada.
 				collapsed: true,
