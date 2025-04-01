@@ -10,6 +10,7 @@ import astroD2 from 'astro-d2'
 export default defineConfig({
 	// para configurar github pages
 	site: 'https://mario-iesdoctorbalmis.github.io', //tu usuario de github
+	base: '/starlight', // el nombre del repositorio
 
 	integrations: [astroD2(), // starlight
 	starlight({

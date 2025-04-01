@@ -19,18 +19,15 @@ Si queremos publicar nuestra web en github, podemos usar el servicio de **Github
 import { defineConfig } from 'astro/config'
 
 export default defineConfig({
-+  site: 'https://mario-iesdoctorbalmis.github.io', // cambia esto por tu nombre de usuario de GitHub
-+  base: '/starlight/', // cambia esto por el nombre de tu repositorio
++  site: 'https://aquí_va_tu_usuario.github.io', // cambia esto por tu nombre de usuario de GitHub
++  base: '/miModulo', // cambia esto por el nombre de tu repositorio
 })
 ```
 
 ### 2. Configurar un **Action** en GitHub
 
 <Steps>
-1. Crea un nuevo archivo en tu proyecto en .github/workflows/deploy.yml y pega el YAML que [hay en la web](https://docs.astro.build/en/guides/deploy/github/#configure-a-github-action).
-   
-   
-2. En GitHub, ve a la pestaña de configuración de tu repositorio y busca la sección de Páginas (**Pages**) de la configuración.
+1. En GitHub, ve a la pestaña de configuración de tu repositorio y busca la sección de Páginas (**Pages**) de la configuración.
 3. Elige **GitHub Actions**
   ![github actions](../../../../assets/ut2/github_actions.png)
 4. Realiza un commit y un push a tu repositorio de GitHub. Esto activará el flujo de trabajo de GitHub Actions que acabas de crear.
