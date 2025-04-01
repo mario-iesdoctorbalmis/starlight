@@ -78,6 +78,7 @@ git push -u origin main
 npm install
 ```
 
+<a id="npm"></a>
 ¿No reconoce el comando npm (nodejs)? [Ver solución](#error_npm)
 
 ¿Qué hace `npm install`? [Ver explicación](#npm_install)
@@ -99,7 +100,7 @@ En el navegador abrir la URL: **http://localhost:4321/es**
 ------------------------
 ## Posibles errores
 
-<a id="error_github"></a>
+<a id="error_github"></a>[Volver a npm](#npm)
 ### 1.- Error Permission denied (publickey) con github:
 ![repo done](src/assets/manual/remote_error.png)
 Parece que estás teniendo un problema con la clave SSH al intentar acceder a un repositorio de GitHub. Aquí tienes algunos pasos para ayudarte a resolverlo:
@@ -155,7 +156,7 @@ echo $env:Path
 [System.Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Program Files\nodejs\", [System.EnvironmentVariableTarget]::Machine)
 # Reiniciar la máquina después
 ```
-<a id="npm_install"></a>
+<a id="npm_install"></a>[Volver a npm](#npm)
 > [!NOTE]
 > #### ¿Qué hace `npm install`?
 > 1. **Instala dependencias**:
@@ -188,7 +189,7 @@ echo $env:Path
 > 
 
 
-<a id="error_powershell"></a>
+<a id="error_powershell"></a>[Volver a npm](#npm)
 ### Error Powershell, sin permisos de ejecución
   - Si da error de PowerShell prueba con el siguiente [manual](https://rogamainformatica.es/npm-ejecucion-scripts-deshabilitada-sistema/)
   1. Ejecuta Powershell como administrador
