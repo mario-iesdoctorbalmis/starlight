@@ -9,7 +9,6 @@
 - Tener cuenta en github (la del centro es buena opción)
 
 
-**Instalar todos a la vez**
   - copia y pega en PowerShell (como admisnistrador)
 ```sh
 winget install -e --id OpenJS.NodeJS # NPM
@@ -70,7 +69,35 @@ git branch -M main
 git push -u origin main
  ```
 
-### Posible error:
+¿Error de Permission denied (publickey)? [Ver solución](#error_github)
+
+## Instalar librerías necesarias 
+
+ - Lanzar el comando:
+```sh
+npm install
+```
+
+¿No reconoce el comando npm (nodejs)? [Ver solución](#error_npm)
+¿Qué hace `npm install`? [Ver explicación](#npm_install)
+¿Error con PowerShell al ejecutar npm? [Ver solución](#error_powershell)
+
+
+## Ejecutar en modo localhost
+
+`npm run dev`
+![ejecución](src/assets/manual/ejecución_dev.png)
+
+En el navegador abrir la URL: **http://localhost:4321/es**
+
+![home](src/assets/manual/home.png)
+
+- En el **Tema 1** hay apuntes de cómo trabajar con **Astro Starlight**
+
+## Posibles errores
+
+<a id="error_github"></a>
+### 1.- Error Permission denied (publickey) con github:
 ![repo done](src/assets/manual/remote_error.png)
 Parece que estás teniendo un problema con la clave SSH al intentar acceder a un repositorio de GitHub. Aquí tienes algunos pasos para ayudarte a resolverlo:
 
@@ -112,9 +139,8 @@ Parece que estás teniendo un problema con la clave SSH al intentar acceder a un
    Deberías ver un mensaje de éxito si todo está configurado correctamente:
    `Hi mario-iesdoctorbalmis! You've successfully authenticated, but GitHub does not provide shell access.`
 
-## Instalar librerías necesarias 
-
-## NPM en Path
+<a id="error_npm"></a>
+### NPM en Path
 
 - Verificar que en el PATH esté nodejs "C:\Program Files\nodejs\"
 
@@ -126,12 +152,7 @@ echo $env:Path
 [System.Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Program Files\nodejs\", [System.EnvironmentVariableTarget]::Machine)
 # Reiniciar la máquina después
 ```
-
- - Lanzar el comando:
-```sh
-npm install
-```
-
+<a id="npm_install"></a>
 > [!NOTE]
 > #### ¿Qué hace `npm install`?
 > 1. **Instala dependencias**:
@@ -163,6 +184,9 @@ npm install
 > Al ejecutar `npm install`, npm descargará e instalará > `express` y `nodemon` en la carpeta `node_modules`.
 > 
 
+
+<a id="error_powershell"></a>
+### Error Powershell, sin permisos de ejecución
   - Si da error de PowerShell prueba con el siguiente [manual](https://rogamainformatica.es/npm-ejecucion-scripts-deshabilitada-sistema/)
   1. Ejecuta Powershell como administrador
   2. Lanza el siguiente comando `Set-ExecutionPolicy Unrestricted`
@@ -171,14 +195,3 @@ npm install
  - Otro posible error en VirtualBox con npm es `⠹Assertion failed: new_time >= loop->time, file c:\ws\deps\uv\src\win\core.c, line 327`. 
    - No hace bien la sincronización de fecha y hora
    - Ve a Sistema > Placa base y asegúrate de que la opción Habilitar reloj de hardware UTC esté marcada.
-
-## Ejecutar en modo localhost
-
-`npm run dev`
-![ejecución](src/assets/manual/ejecución_dev.png)
-
-En el navegador abrir la URL: **http://localhost:4321/es**
-
-![home](src/assets/manual/home.png)
-
-- En el **Tema 1** hay apuntes de cómo trabajar con **Astro Starlight**
