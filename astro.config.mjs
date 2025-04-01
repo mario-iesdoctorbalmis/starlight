@@ -24,7 +24,7 @@ export default defineConfig({
 			en: 'IES Doctor Balmis - EN',
 		},
 		locales: {
-			'es': { lang: 'es', label: 'Español' },
+			'root': { lang: 'es', label: 'Español' },
 			'en': { lang: 'en', label: 'English' },
 			'va': { lang: 'va', label: 'Valencià' },
 		},
