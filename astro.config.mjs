@@ -24,12 +24,12 @@ export default defineConfig({
 			en: 'IES Doctor Balmis - EN',
 		},
 		locales: {
-			'root': { lang: 'es', label: 'Español' },
+			'es': { lang: 'es', label: 'Español' },
 			'en': { lang: 'en', label: 'English' },
 			'va': { lang: 'va', label: 'Valencià' },
 		},
 		// Set Spanish as the default language for this site.
-		defaultLocale: 'root',
+		defaultLocale: 'es',
 		sidebar: [
 			// UT1
 			{
