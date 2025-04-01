@@ -79,6 +79,7 @@ git push -u origin main
 npm install
 ```
 
+<a id="npm"></a>
 ¿No reconoce el comando npm (nodejs)? [Ver solución](#error_npm)
 
 ¿Qué hace `npm install`? [Ver explicación](#npm_install)
