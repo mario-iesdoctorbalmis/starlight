@@ -36,6 +36,7 @@ git clone https://github.com/mario-iesdoctorbalmis/starlight miModulo
   ![clonación de repo](src/assets/manual/Github%20clone.png)
 
 ## GIT y GITHUB
+**_Recuerda de estar dentro de la carpeta de trabajo o módulo_**
 
 Desde `consola de VS code` configuramos git
 ### 1.- Configuración básica de GIT
