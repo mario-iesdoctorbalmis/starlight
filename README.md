@@ -38,14 +38,14 @@ git clone https://github.com/mario-iesdoctorbalmis/starlight miModulo
 ## GIT y GITHUB
 
 Desde `consola de VS code` configuramos git
-### Configuración básica de GIT
+### 1.- Configuración básica de GIT
 
 ```sh
 $ git config --global user.name "John Doe"
 $ git config --global user.email johndoe@example.com
 ```
 
-### Creamos nuevo repositorio en nuestro espacio
+### 2.- Creamos nuevo repositorio en nuestro espacio de GITHUB
    1. Vamos a la página de [github](https://github.com)
    2. Creamos repositorio nuevo (público o privado)
     ![new repo](src/assets/manual/new%20repository.png)
@@ -79,7 +79,9 @@ npm install
 ```
 
 ¿No reconoce el comando npm (nodejs)? [Ver solución](#error_npm)
+
 ¿Qué hace `npm install`? [Ver explicación](#npm_install)
+
 ¿Error con PowerShell al ejecutar npm? [Ver solución](#error_powershell)
 
 
@@ -94,6 +96,7 @@ En el navegador abrir la URL: **http://localhost:4321/es**
 
 - En el **Tema 1** hay apuntes de cómo trabajar con **Astro Starlight**
 
+------------------------
 ## Posibles errores
 
 <a id="error_github"></a>
