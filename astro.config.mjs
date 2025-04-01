@@ -14,7 +14,8 @@ export default defineConfig({
 
 	integrations: [astroD2(), // starlight
 	starlight({
-		favicon: '/images/favicon.png',
+		favicon: '/images/balmis.png',
+		// favicon: '/images/favicon.png',
 		logo: {
 			src: './src/assets/balmis.jpeg',
 		},
