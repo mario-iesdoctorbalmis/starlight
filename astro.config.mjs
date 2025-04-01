@@ -9,6 +9,9 @@ import markdoc from '@astrojs/markdoc';
 
 // https://astro.build/config
 export default defineConfig({
+	// para configurar github pages
+	site: 'https://mario-iesdoctorbalmis.github.io', //tu usuario de github
+
 	integrations: [astroD2(), // starlight
 	starlight({
 		favicon: '/images/favicon.png',

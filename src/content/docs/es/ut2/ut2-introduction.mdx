@@ -1,0 +1,36 @@
+---
+title: UT21 Github pages
+sidebar:
+  label: Github pages
+---
+
+import { Steps } from '@astrojs/starlight/components';
+
+## GITGHUB PAGES
+
+Si queremos publicar nuestra web en github, podemos usar el servicio de **Github Pages**. Este servicio nos permite alojar sitios web estáticos directamente desde un repositorio de GitHub. Es ideal para proyectos personales, documentación o cualquier tipo de contenido que no requiera un backend dinámico.
+
+- Seguiremos la siguiente guía https://docs.astro.build/en/guides/deploy/github/. 
+- Al final de este hay más guías para otros servicios como AWS o Azure.
+
+### 1. Configurar el fichero **astro.config.mjs**
+
+```diff lang="js" title="astro.config.mjs"
+import { defineConfig } from 'astro/config'
+
+export default defineConfig({
++  site: 'https://tu_usuario.github.io',
+})
+```
+
+### 2. Configurar un **Action** en GitHub
+
+<Steps>
+1. Crea un nuevo archivo en tu proyecto en .github/workflows/deploy.yml y pega el YAML que [hay en la web](https://docs.astro.build/en/guides/deploy/github/#configure-a-github-action).
+   
+   
+2. En GitHub, ve a la pestaña de configuración de tu repositorio y busca la sección de Páginas de la configuración.
+3. Elige la rama donde se encuentra tu código (normalmente main o master)
+4. Realiza un commit y un push a tu repositorio de GitHub. Esto activará el flujo de trabajo de GitHub Actions que acabas de crear.
+5. Espera a que el flujo de trabajo se complete. Puedes verificar el progreso en la pestaña "Actions" de tu repositorio.
+</Steps>
