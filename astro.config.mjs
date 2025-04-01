@@ -5,7 +5,6 @@ import starlight from '@astrojs/starlight';
 
 import astroD2 from 'astro-d2'
 
-import markdoc from '@astrojs/markdoc';
 
 // https://astro.build/config
 export default defineConfig({
@@ -102,6 +101,6 @@ export default defineConfig({
 			},
 		],
 
-	}), markdoc()],
+	}),],
 
 });
