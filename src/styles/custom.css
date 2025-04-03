@@ -1,3 +1,24 @@
 #starlight__mobile-toc{
     display: none;
 }
+
+@media only screen and (max-width: 600px) {
+    header{
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        height: auto !important;
+      }
+    
+      nav{
+       /* display: none !important; */
+       border-top: 0;
+      }
+       .main-frame{
+        padding-top: 0;  
+      }
+
+      button{
+        margin-top: -10px !important;
+      }
+  }
+
