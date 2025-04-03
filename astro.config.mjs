@@ -14,6 +14,10 @@ export default defineConfig({
 
 	integrations: [astroD2(), // starlight
 	starlight({
+		customCss: [
+			// Relative path to your custom CSS file
+			'./src/styles/custom.css',
+		],
 		favicon: '/images/favicon.png',
 		logo: {
 			src: './src/assets/balmis.jpeg',
