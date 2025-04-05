@@ -1,4 +1,7 @@
-# Plantilla Balmis Starlight 
+# Plantilla IES DOCTOR BALMIS Starlight 
+
+ejemplo de cómo queda tras la instalación:
+[starlight IES DOCTOR BALMIS template](https://mario-iesdoctorbalmis.github.io/starlight/es/)
 ## Requisitos
 
 - Visual Studio Code
