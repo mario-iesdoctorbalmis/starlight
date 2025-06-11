@@ -1,7 +1,7 @@
 ---
 title: UT3. Other ES
 sidebar:
-  label: label for UT3 Other
+  label: Custom sidebar label for UT3
   order: 1
 ---
 
