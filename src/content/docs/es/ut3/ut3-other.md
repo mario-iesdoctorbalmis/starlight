@@ -6,3 +6,7 @@ sidebar:
 ---
 
 ES
+
+:::caution[Advertencia]
+AAquí se explica cómo ponen orden a las páginas de un sitio web. Con lo que no haría falta poner un orden en el ficher astro.config.mjs, ya que el orden de las páginas se pone en el sidebar.
+:::
