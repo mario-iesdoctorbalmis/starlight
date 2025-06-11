@@ -13,7 +13,8 @@ import { Steps } from '@astrojs/starlight/components';
 
 Si queremos publicar nuestra web en github, podemos usar el servicio de **Github Pages**. Este servicio nos permite alojar sitios web estáticos directamente desde un repositorio de GitHub. Es ideal para proyectos personales, documentación o cualquier tipo de contenido que no requiera un backend dinámico.
 
-- Seguiremos la siguiente guía https://docs.astro.build/en/guides/deploy/github/. 
+- Seguiremos la siguiente guía para Github actions: https://docs.astro.build/en/guides/deploy/github/. 
+  - La rama "main" será la que se despliegue en la web pública por defecto. Se puede configurar otra en: .github/workflows/deploy.yml
 - Al final de este hay más guías para otros servicios como AWS o Azure.
 
 ### 1. Configurar el fichero **astro.config.mjs**
